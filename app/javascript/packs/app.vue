@@ -8,13 +8,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import UserIndexPage from 'UserIndexPage.vue'
-import UserNewPage from 'UserNewPage.vue'
+import UserIndexPage from './UserIndexPage.vue'
+import UserNewPage from './UserNewPage.vue'
 
 const router = new VueRouter({
   routes: [
     { path: '/index',
-      name: 'UserIndexPage'
+      name: 'UserIndexPage',
       component: UserIndexPage  },
     { path: '/users/new',
       name: 'UserNewPage',
@@ -28,6 +28,7 @@ Vue.use(VueRouter)
 export default {
   router
 }
+console.log(VueRouter)
 </script>
 
 <style scoped>
